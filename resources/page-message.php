@@ -294,26 +294,6 @@ get_header(); ?>
 								]); ?>
 							</div>
 						</div>
-						<div class="p-message-recruiter__low__block">
-							<div class="p-message-recruiter__low__profile">
-								<?php get_template_part(PICTURE, null, [
-									"path" => "message/message-recruiter-img-06.jpg",
-									"alt" => "",
-									"type" => "circle",
-									"variable" => "p-message-recruiter__low__pic",
-								]); ?>
-								<div>
-									<p>総務統括部　人事課<br>2021年入社</p>
-									<p class="p-message-recruiter__low__name">浅野　洸俊</p>
-								</div>
-							</div>
-							<div class="p-message-recruiter__low__text">
-								<?php get_template_part(TYPO, null, [
-									"text" => "やりたいことも目指したいことも見つからない。そんな中、なんとなく就職活動に参加する人もいるかと思います。面接が上手い人はどんどん内定を貰い、就活に焦る方もいるかと思います。オーテックでは人物重視の採用を行っており、面接時には和やかな雰囲気感であなたの人柄を知れる場にしたいと常に考えています。私たち人事はあなたの味方です。私達にあなたのこれまでの様々なご経験を教えて下さい。それでは、オーテック採用担当一同、あなたとお会いできる事を心よりお待ちしております。",
-									"weight" => "medium"
-								]); ?>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
