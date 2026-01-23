@@ -1,0 +1,91 @@
+.pc {
+	@include pc {
+		display: block;
+	}
+
+	@include sp {
+		display: none;
+	}
+}
+
+.sp {
+	@include pc {
+		display: none;
+	}
+
+	@include sp {
+		display: block;
+	}
+}
+
+.pc-hide {
+	@include pc {
+		display: none;
+	}
+}
+
+.sp-hide {
+	@include sp {
+		display: none;
+	}
+}
+
+.tab {
+	display: none;
+
+	@include tab {
+		display: block;
+	}
+}
+
+.tab-hide {
+	@include tab {
+		display: none;
+	}
+}
+
+.max-fhd {
+	display: none;
+
+	@include min-max(break, fhd) {
+		display: block;
+	}
+}
+
+.min-fhd {
+	display: none;
+
+	@include min-fhd {
+		display: block;
+	}
+}
+
+br.pc {
+	@include pc {
+		display: inline;
+	}
+}
+
+br.tab {
+	@include tab {
+		display: inline;
+	}
+}
+
+br.tab-hide {
+	@include tab {
+		display: none;
+	}
+}
+
+br.sp {
+	@include sp {
+		display: inline;
+	}
+}
+
+br.sp-hide {
+	@include sp {
+		display: none;
+	}
+}

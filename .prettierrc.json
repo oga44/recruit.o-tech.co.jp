@@ -1,0 +1,6 @@
+{
+	"useTabs": true,
+	"tabWidth": 1,
+	"arrowParens": "always",
+	"printWidth": 250
+}

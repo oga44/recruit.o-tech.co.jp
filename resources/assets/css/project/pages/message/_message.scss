@@ -1,0 +1,277 @@
+.p-message__intro {
+	position: relative;
+}
+
+.p-message__intro__cont {
+	@include pc {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: vw(80);
+	}
+}
+
+.p-message__intro__descs {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 1em;
+
+	@include sp {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.p-message__intro__desc {
+	font-family: $font-noto;
+	font-size: rem(16);
+	font-weight: 500;
+	line-height: 2.5;
+	letter-spacing: 0.05em;
+
+	@include sp {
+		font-size: rem(15);
+	}
+}
+
+.p-message__intro__bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: vw(480);
+
+	@include sp {
+		z-index: 1;
+		width: 100%;
+	}
+}
+
+.p-message__sections {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 104px;
+	margin-top: 120px;
+
+	@include sp {
+		gap: 56px;
+		margin-top: 60px;
+	}
+}
+
+.p-message__sec__head {
+	&--center {
+		text-align: center;
+	}
+}
+
+.p-message__sec__head__shoulder {
+	text-align: left;
+
+	&--center {
+		text-align: center;
+	}
+
+	&--body {
+		display: inline-block;
+		padding: 1em 2em;
+		font-size: rem(20);
+		font-weight: 700;
+		line-height: 1.35;
+		color: white;
+		background-color: $red;
+		border-radius: 999px;
+
+		@include sp {
+			width: 100%;
+			font-size: rem(16);
+			text-align: center;
+		}
+	}
+}
+
+.p-message__sec__head__hd {
+	@include pc {
+		display: flex;
+		gap: vw(80);
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 60px;
+	}
+
+	@include sp {
+		margin-top: 42px;
+	}
+
+	&::after {
+		@include pc {
+			display: block;
+			flex: 1;
+			width: 100%;
+			height: 1px;
+			content: "";
+			background-color: $red;
+		}
+	}
+
+	&--center {
+		display: block;
+
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.p-message__sec__body {
+	display: flex;
+
+	@include pc {
+		gap: vw(80);
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 0 vw(160) 0 vw(80);
+		margin-top: 80px;
+	}
+
+	@include sp {
+		flex-direction: column;
+		gap: 40px;
+		padding: 0 vw-sp(40);
+		margin-top: 40px;
+	}
+
+	&--reserve {
+		@include pc {
+			flex-direction: row-reverse;
+			padding: 0 vw(80) 0 vw(160);
+		}
+
+		@include sp {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&--center {
+		text-align: center;
+
+		@include pc {
+			padding: 0 vw(338);
+		}
+	}
+}
+
+.p-message__sec__pic {
+	width: vw(560);
+
+	@include sp {
+		width: vw-sp(340);
+		margin-left: vw-sp(-60);
+	}
+}
+
+.p-message__sec__text {
+	display: grid;
+	flex: 1;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 1em;
+	width: 100%;
+}
+
+.p-message__sec__body__desc {
+	font-family: $font-noto;
+	font-size: rem(16);
+	font-weight: 500;
+	line-height: 2;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(15);
+	}
+
+	&--md {
+		font-family: $font-noto;
+		font-size: rem(17);
+		font-weight: 500;
+		line-height: 2;
+		letter-spacing: 0.03em;
+
+		@include sp {
+			font-size: rem(15);
+		}
+	}
+}
+
+.p-message__sec__body__low {
+	display: grid;
+
+	@include pc {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: vw(80);
+		margin-top: 80px;
+	}
+
+	@include sp {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 40px;
+		margin-top: 40px;
+	}
+}
+
+.p-message__low {
+	position: relative;
+	padding-bottom: 145px;
+	margin-top: 172px;
+	overflow: hidden;
+
+	@include sp {
+		padding-bottom: 140px;
+		margin-top: 56px;
+	}
+}
+
+.p-message__low__text {
+	position: relative;
+	z-index: 2;
+
+	@include pc {
+		padding: vw(200) vw(400) 0;
+		margin-top: vw(240);
+	}
+
+	@include sp {
+		padding: 0 vw-sp(40);
+		margin-top: 120px;
+	}
+}
+
+.p-message__low__lead {
+	margin-bottom: 120px;
+	text-align: center;
+
+	@include sp {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+		text-align: left;
+	}
+}
+
+.p-message__low__bg {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	z-index: 1;
+	width: vw(1828);
+	aspect-ratio: 1828 / 900;
+	transform: translateX(-50%);
+
+	@include sp {
+		width: vw-sp(1584);
+	}
+
+	picture {
+		width: 100%;
+		height: 100%;
+	}
+}

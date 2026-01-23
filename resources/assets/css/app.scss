@@ -1,0 +1,32 @@
+// settings
+@import "foundation/map/*";
+@import "foundation/font/*";
+@import "foundation/functions/*";
+@import "foundation/mixins/*";
+@import "foundation/variable/*";
+@import "foundation/tailwindcss/*";
+@import "foundation/reset/*";
+@import "project/foundation/*";
+
+// swiper
+@import "../../../node_modules/swiper/swiper-bundle.min.css";
+
+// project
+@import "project/global/*";
+@import "project/layouts/*";
+@import "project/objects/*";
+@import "project/model/**/*";
+@import "project/pages/**/*";
+@import "project/wp/*";
+
+// animation
+@import "project/animation/*";
+
+// vendor
+@import "project/vendor/*";
+
+// tailwind
+@import "tailwind/*";
+
+// utilities
+@import "project/utilities/*";

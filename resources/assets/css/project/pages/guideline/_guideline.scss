@@ -1,0 +1,311 @@
+.p-guideline__main {
+	gap: 160px;
+
+	@include sp {
+		gap: 80px;
+	}
+}
+
+.p-guideline__sec {
+	gap: 96px;
+
+	@include sp {
+		gap: 48px;
+	}
+}
+
+.p-guideline__hd {
+	padding-bottom: 28px;
+	margin-bottom: 36px;
+	border-bottom: 1px solid $gray-light;
+
+	@include sp {
+		padding-bottom: 20px;
+	}
+}
+
+.p-guideline__cap {
+	display: block;
+	margin-top: 1em;
+}
+
+.p-guideline__btns {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 18px;
+	margin-top: 36px;
+
+	@include sp {
+		gap: 16px;
+		margin-top: 40px;
+	}
+}
+
+.p-guideline__btns__row {
+	@include pc {
+		display: flex;
+		gap: 19px;
+		align-items: center;
+	}
+
+	@include sp {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		align-items: flex-start;
+	}
+}
+
+.p-guideline__btn {
+	color: $blue;
+	border-color: $black;
+
+	@include hover {
+		background-color: $blue-light2;
+		border-color: $blue;
+	}
+
+	&,
+	&--red {
+		gap: vw(16);
+		height: 90px;
+		padding: 0 vw(60);
+		font-size: rem(18);
+		transition: 0.5s $transform-easing;
+
+		@include pc {
+			min-width: vw(323);
+		}
+
+		@include hover {
+			color: white;
+		}
+
+		@include sp {
+			width: 100%;
+			min-width: 0;
+			height: 80px;
+			padding: 0 vw-sp(54);
+		}
+	}
+
+	&--red {
+		color: $red;
+		border-color: $red;
+
+		@include hover {
+			background-color: $red;
+		}
+	}
+}
+
+.p-guideline__class {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 56px;
+
+	@include sp {
+		gap: 40px;
+	}
+}
+
+.p-guideline__class__hd {
+	font-size: rem(24);
+	font-weight: 700;
+	line-height: 1;
+	color: $blue;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(18);
+	}
+}
+
+.p-guideline__class__items {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 18px;
+	margin-top: 36px;
+
+	@include sp {
+		gap: 27px;
+		margin-top: 27px;
+	}
+}
+
+.p-guideline__class__item {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 18px;
+}
+
+.p-guideline__gap {
+	gap: 18px;
+
+	&--lg {
+		gap: 36px;
+	}
+}
+
+.p-guideline__flow__tabs {
+	display: flex;
+	gap: vw(4);
+	margin: 60px 0 24px;
+	border-bottom: 1px solid $gray-light3;
+
+	@include sp {
+		gap: vw-sp(4);
+		margin: 32px 0 20px;
+	}
+}
+
+.p-guideline__flow__tab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px vw(20);
+	font-size: rem(20);
+	font-weight: 700;
+	line-height: 1;
+	color: white;
+	letter-spacing: 0.03em;
+	background-color: $gray-light3;
+	border-radius: 15px 15px 0 0;
+	transition: 0.5s $transform-easing;
+
+	@include hover {
+		background-color: $black;
+	}
+
+	@include sp {
+		padding: 14px vw-sp(22);
+		font-size: rem(18);
+	}
+}
+
+.p-guideline__flow {
+	position: relative;
+	display: grid;
+	gap: 16px;
+
+	&::after {
+		position: absolute;
+		top: -12px;
+		left: 0;
+		z-index: 1;
+		width: vw(64);
+		height: calc(100% + 20px);
+		content: "";
+		background: linear-gradient(180deg, rgb(207 241 255 / 25%) 0%, rgb(207 241 255 / 100%) 50%, rgba($red, 1) 100%);
+		border-radius: 999px;
+
+		@include sp {
+			width: vw-sp(64);
+		}
+	}
+}
+
+.p-guideline__flow__block {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-wrap: wrap;
+	gap: vw(52);
+	align-items: flex-start;
+	padding-left: vw(12);
+
+	@include sp {
+		gap: vw-sp(38);
+		align-items: flex-start;
+		padding-left: vw-sp(12);
+	}
+}
+
+.p-guideline__flow__index {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(40);
+	height: 60px;
+	font-family: $font-manrope;
+	font-size: rem(16);
+	font-weight: 700;
+	line-height: 1;
+	color: $gray;
+	letter-spacing: -0.03em;
+	background-color: white;
+	border-radius: 999px;
+
+	@include sp {
+		width: vw-sp(40);
+	}
+}
+
+.p-guideline__flow__text {
+	display: grid;
+	flex: 1;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 18px;
+	width: 100%;
+	padding: 14px 0 24px;
+	border-bottom: 1px solid $gray-light;
+
+	@include sp {
+		padding: 17px 0 20px;
+	}
+}
+
+.p-guideline__flow__hd {
+	font-size: rem(24);
+	font-weight: 700;
+	line-height: 1.35;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(20);
+	}
+}
+
+.p-guideline__entry {
+	margin-top: 160px;
+	text-align: center;
+
+	@include sp {
+		margin-top: 80px;
+	}
+}
+
+.p-guideline__entry__btn {
+	width: vw(560);
+	height: 140px;
+	margin: 36px auto 0;
+	font-size: rem(24);
+	font-weight: 700;
+	line-height: 1;
+	color: white;
+	letter-spacing: 0.1em;
+	background-color: $red;
+	border-color: $red;
+	transition: 0.5s $transform-easing;
+
+	@include hover {
+		color: $red;
+		background-color: transparent;
+	}
+
+	@include sp {
+		width: calc(100% - vw(40));
+		height: 70px;
+		font-size: rem(18);
+	}
+
+	&--career {
+		background-color: $blue;
+		border-color: $blue;
+
+		@include hover {
+			color: $blue;
+			background-color: transparent;
+		}
+	}
+}

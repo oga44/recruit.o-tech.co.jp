@@ -1,0 +1,71 @@
+.l-cont {
+	padding: 0 vw(120);
+
+	@include sp {
+		padding: 0 vw-sp(20);
+	}
+
+	&--full {
+		padding: 0;
+	}
+
+	&--lg {
+		padding: 0 vw(40);
+
+		@include sp {
+			padding: 0 vw-sp(20);
+		}
+	}
+
+	&--md {
+		padding: 0 vw(80);
+	}
+
+	&--sm {
+		padding: 0 vw(160);
+
+		@include sp {
+			padding: 0 vw-sp(20);
+		}
+	}
+
+	&--xs {
+		padding: 0 vw(280);
+
+		@include sp {
+			padding: 0 vw-sp(20);
+		}
+	}
+
+	&--xxs {
+		padding: 0 vw(360);
+
+		@include sp {
+			padding: 0 vw-sp(40);
+		}
+	}
+
+	&--sp {
+		@include sp {
+			padding: 0 vw-sp(20);
+		}
+	}
+
+	&--sp-sm {
+		@include sp {
+			padding: 0 vw-sp(40);
+		}
+	}
+
+	&--sp-none {
+		@include sp {
+			padding: 0;
+		}
+	}
+
+	&--pc {
+		@include pc {
+			padding: 0 vw(120);
+		}
+	}
+}

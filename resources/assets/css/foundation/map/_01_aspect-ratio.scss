@@ -1,0 +1,11 @@
+@use "sass:math";
+
+// アスペクト比
+$aspect-ratio: (
+	square: math.div(1, 1),
+	golden: math.div(1, 1.618),
+	movie: math.div(1, 2),
+	picture: math.div(2, 3),
+	display: math.div(3, 4),
+	video: math.div(9, 16),
+);

@@ -1,0 +1,10 @@
+@use "sass:math";
+
+// pxをremに変換
+@function rem($px) {
+	@return $px * 0.1rem;
+}
+
+@function px($rem) {
+	@return ($rem * 16) + px;
+}

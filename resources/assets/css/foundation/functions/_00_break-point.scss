@@ -1,0 +1,7 @@
+@use "sass:map";
+
+@function bp($mode: break) {
+	$bp: map.get($break-point, $mode);
+
+	@return $bp;
+}

@@ -1,0 +1,114 @@
+.m-people-card__text {
+	margin: 32px 0 0;
+
+	@include sp {
+		margin-top: 20px;
+	}
+}
+
+.m-people-card__row {
+	@include pc {
+		display: flex;
+		align-items: flex-end;
+	}
+}
+
+.m-people-card__hd {
+	font-size: rem(24);
+	font-weight: 700;
+	line-height: 1.35;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(20);
+	}
+}
+
+.m-people-card__profile {
+	margin: 28px 0 0;
+	font-family: $font-noto;
+
+	@include sp {
+		margin-top: 20px;
+	}
+
+	&--br {
+		display: block;
+	}
+}
+
+.m-people-card__profile__up {
+	display: flex;
+	align-items: center;
+}
+
+.m-people-card__profile__low {
+	display: flex;
+	align-items: center;
+
+	@include pc {
+		margin-left: vw(21);
+	}
+
+	@include sp {
+		gap: vw-sp(13);
+		margin-top: 10px;
+	}
+
+	&--br {
+		margin: 14px 0 0;
+
+		@include sp {
+			gap: vw-sp(13);
+			margin-top: 10px;
+		}
+	}
+}
+
+.m-people-card__name {
+	font-size: rem(24);
+	font-weight: 700;
+	line-height: 1;
+	color: $gray;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(20);
+	}
+}
+
+.m-people-card__profile__icon {
+	display: inline-block;
+	padding: 7px vw(11);
+	margin: 0 0 12px;
+	font-size: rem(14);
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	border: 1px solid $black;
+	border-radius: 999px;
+
+	@include sp {
+		padding: 4px vw-sp(7);
+		margin: 0 0 10px;
+		font-size: rem(12);
+	}
+}
+
+.m-people-card__school,
+.m-people-card__year {
+	font-family: 400;
+	font-size: rem(14);
+	line-height: 1.5;
+	color: $gray;
+	letter-spacing: 0.03em;
+}
+
+.m-people-card__year {
+	margin-left: vw(14);
+}
+
+.m-people-card__btn {
+	display: flex;
+	justify-content: flex-end;
+}

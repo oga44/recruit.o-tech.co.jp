@@ -1,0 +1,28 @@
+.anm-text-up {
+	@include hover {
+		.anm-text-up__body {
+			animation: text-up 0.5s $transform-easing forwards;
+		}
+	}
+}
+
+.anm-text-up__wrap {
+	display: inline-block;
+	height: 1em;
+	overflow: hidden;
+}
+
+.anm-text-up__body {
+	display: block;
+	transform: translateY(0);
+}
+
+@keyframes text-up {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-100%);
+	}
+}

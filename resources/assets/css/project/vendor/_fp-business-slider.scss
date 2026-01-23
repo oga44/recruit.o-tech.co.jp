@@ -1,0 +1,22 @@
+.js-fp-business-slide {
+	left: 0;
+	z-index: 1;
+	transition: 1s $transform-easing;
+
+	&::after {
+		transition: 1s $transform-easing;
+	}
+
+	&.is-show {
+		left: vw(40);
+		z-index: 2;
+
+		@include sp {
+			left: vw-sp(20);
+		}
+
+		&::after {
+			background-color: transparent;
+		}
+	}
+}

@@ -1,0 +1,135 @@
+.fp-person {
+	padding: 400px 0 0;
+
+	@include sp {
+		overflow-x: clip;
+	}
+}
+
+.fp-person__head {
+	@include pc {
+		display: flex;
+		align-items: flex-end;
+	}
+}
+
+.fp-person__head__hd {
+	@include pc {
+		width: calc(50% - vw(40));
+	}
+}
+
+.fp-person__head__desc {
+	@include pc {
+		width: 50%;
+		margin-bottom: 10px;
+	}
+
+	@include sp {
+		margin-top: 32px;
+	}
+}
+
+.fp-person__intro {
+	margin-top: 120px;
+
+	@include sp {
+		display: none;
+	}
+}
+
+.fp-person__intro__pics {
+	@include pc {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	&--end {
+		justify-content: flex-end;
+	}
+
+	&--sm {
+		padding: 0 vw(40);
+	}
+}
+
+.fp-person__intro__pic--01,
+.fp-person__intro__pic--02 {
+	width: 56.25%;
+}
+
+.fp-person__intro__pic--02 {
+	margin-top: -240px;
+}
+
+.fp-person__intro__pic--03 {
+	width: 50%;
+	margin-top: -80px;
+}
+
+.fp-person__intro__pic--sp {
+	@include pc {
+		display: none;
+	}
+
+	@include sp {
+		width: vw-sp(400);
+		aspect-ratio: 400 / 250;
+		margin-bottom: 60px;
+		margin-left: vw-sp(-20);
+	}
+}
+
+.fp-person__body {
+	padding: 120px 0 0;
+
+	@include sp {
+		padding-top: 60px;
+	}
+}
+
+.fp-person__row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 72px 0 0;
+
+	@include sp {
+		margin-top: 36px;
+	}
+}
+
+.fp-person__cards {
+	@include pc {
+		width: calc(50% - vw(120));
+	}
+
+	&,
+	&--lg {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 120px 0;
+
+		@include sp {
+			gap: 60px;
+		}
+	}
+
+	&--lg {
+		@include pc {
+			width: 50%;
+			margin-top: 303px;
+		}
+
+		@include sp {
+			gap: 48px;
+			margin-top: 60px;
+		}
+	}
+}
+
+.fp-person__btn {
+	display: flex;
+	justify-content: flex-end;
+}

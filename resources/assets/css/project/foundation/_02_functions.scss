@@ -1,0 +1,32 @@
+@use "sass:math";
+
+@function vw($size) {
+	@return math.div($size, $pc-width) * 100vw;
+}
+
+@function vw-sp($size) {
+	@return math.div($size, $sp-width) * 100vw;
+}
+
+@function vh($size) {
+	@return math.div($size, $pc-height) * 100vh;
+}
+
+@function vh-sp($size) {
+	@return math.div($size, $sp-height) * 100vh;
+}
+
+// インナーコンテンツ内での割合
+@function inner-width($px, $width: $sp-width, $side-padding: $sp-side-padding) {
+	$inner: $width - ($side-padding * 2);
+
+	@return math.percentage(math.div($px, $inner));
+}
+
+@function absolute-position($px, $width: $pc-width) {
+	@return calc($px / $pc-width * 100vw);
+}
+
+@function absolute-position-height($px, $height) {
+	@return calc($px / $height * 100vh);
+}

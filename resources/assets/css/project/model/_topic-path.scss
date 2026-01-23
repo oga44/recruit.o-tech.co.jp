@@ -1,0 +1,37 @@
+.topic-path {
+	display: flex;
+	align-items: center;
+
+	@include sp {
+		flex-wrap: wrap;
+	}
+}
+
+.topic-path__item {
+	font-size: rem(12);
+	font-weight: 700;
+	line-height: 1;
+	color: #7f7f7f;
+	letter-spacing: 0.05em;
+
+	@include sp {
+		line-height: 1.35;
+	}
+
+	&::after {
+		display: inline-block;
+		margin: 0 vw(8);
+		font-family: $font-manrope;
+		font-size: rem(14);
+		font-weight: 500;
+		content: "/";
+	}
+
+	&:last-of-type {
+		color: $black;
+
+		&::after {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.js-tech-body {
+	position: relative;
+}
+
+.js-tech-area {
+	position: relative;
+	width: 100%;
+
+	&.is-fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		.js-tech-block {
+			position: absolute;
+		}
+	}
+}
+
+.js-tech-block {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	transition: 0.5s $transform-easing;
+
+	&.is-show {
+		opacity: 1;
+	}
+}
+
+.js-tech-index-item {
+	transition: 0.3s $transform-easing;
+
+	&.is-active {
+		width: vw(32);
+		background-color: #00ffff;
+
+		@include sp {
+			width: vw-sp(24);
+		}
+	}
+}

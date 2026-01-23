@@ -1,0 +1,44 @@
+.fp-message {
+	@include sp {
+		padding-right: vw-sp(20);
+	}
+}
+
+.fp-message__link {
+	position: relative;
+
+	@include pc {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 104px vw(104);
+		clip-path: inset(0 0 round 9999px);
+	}
+
+	@include sp {
+		display: block;
+		padding: 40px vw-sp(64) 40px vw-sp(20);
+		clip-path: inset(0 0 round 0 9999px 9999px 0);
+	}
+}
+
+.fp-message__hd {
+	@include sp {
+		margin-bottom: 26px;
+		font-size: rem(24);
+	}
+}
+
+.fp-message__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+
+	picture {
+		width: 100%;
+		height: 100%;
+	}
+}

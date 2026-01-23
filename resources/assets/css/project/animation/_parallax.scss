@@ -1,0 +1,44 @@
+.anm-pl {
+	// animation: parallax-small-anim linear;
+	// animation-timeline: scroll();
+
+	&--md {
+		// animation: parallax-medium-anim linear;
+		// animation-timeline: scroll();
+	}
+
+	&--lg {
+		// animation: parallax-large-anim linear;
+		// animation-timeline: scroll();
+	}
+}
+
+@keyframes parallax-large-anim {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(800px);
+	}
+}
+
+@keyframes parallax-medium-anim {
+	from {
+		transform: translateY(200px);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes parallax-small-anim {
+	from {
+		transform: translateY(2400px);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}

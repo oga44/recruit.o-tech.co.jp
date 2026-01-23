@@ -1,0 +1,94 @@
+.js-accordion {
+	overflow: hidden;
+
+	&.color-blue {
+		@include hover {
+			.o-icon-toggle {
+				background-color: #4fccff;
+				border-color: #4fccff;
+			}
+		}
+	}
+
+	&.is-show {
+		&.color-blue {
+			border-color: #4fccff;
+
+			.o-icon-toggle {
+				border-color: #4fccff;
+			}
+
+			.o-icon-toggle__body {
+				&::before,
+				&::after {
+					background-color: #4fccff;
+				}
+			}
+
+			@include hover {
+				.o-icon-toggle__body {
+					&::before,
+					&::after {
+						background-color: white;
+					}
+				}
+			}
+		}
+
+		&.round {
+			border-radius: 20px;
+		}
+
+		.js-accordion-target {
+			grid-template-rows: 1fr;
+		}
+
+		.js-accordion-target-spacer {
+			padding-top: 27px;
+			margin-top: 27px;
+			border-top: 1px solid $gray-lighter;
+		}
+
+		.js-accordion-icon {
+			&::before {
+				transform: rotate(0deg);
+			}
+		}
+
+		.js-accordion-pt-40 {
+			padding-top: 40px;
+
+			@include sp {
+				padding-top: 20px;
+			}
+		}
+
+		.js-accordion-pb-40 {
+			padding-bottom: 40px;
+
+			@include sp {
+				padding-bottom: 32px;
+			}
+		}
+	}
+}
+
+.js-accordion-target {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.5s $transform-easing;
+}
+
+.js-accordion-target-spacer {
+	transition:
+		padding 0.5s $transform-easing,
+		margin 0.5s $transform-easing;
+}
+
+.js-accordion-target-inner {
+	overflow: hidden;
+}
+
+.js-accordion-pt-40 {
+	transition: padding 0.5s $transform-easing;
+}

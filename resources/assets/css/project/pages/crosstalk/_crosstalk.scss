@@ -1,0 +1,270 @@
+.p-crosstalk__peoples__row {
+	@include pc {
+		display: flex;
+		gap: vw(80);
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	@include sp {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 40px;
+	}
+}
+
+.p-crosstalk__people {
+	font-family: $font-noto;
+	font-size: rem(14);
+	font-weight: 400;
+	line-height: 1.5;
+	color: $gray;
+	letter-spacing: 0.03em;
+
+	@include pc {
+		width: vw(173);
+	}
+
+	@include sp {
+		display: flex;
+		gap: vw-sp(20);
+		align-items: center;
+		font-size: rem(13);
+	}
+}
+
+.p-crosstalk__people__pic {
+	clip-path: inset(0 0 round 50%);
+
+	@include pc {
+		margin-bottom: 24px;
+	}
+
+	@include sp {
+		width: vw-sp(100);
+	}
+}
+
+.p-crosstalk__people__name {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-size: rem(20);
+	font-weight: 700;
+	line-height: 1;
+}
+
+.p-crosstalk__people__school {
+	margin-top: 4px;
+}
+
+.p-crosstalk__people__year {
+	margin-top: 12px;
+
+	@include sp {
+		margin-top: 10px;
+	}
+}
+
+.p-crosstalk__sec {
+	position: relative;
+	margin-top: 160px;
+
+	@include sp {
+		margin-top: 80px;
+	}
+
+	&:nth-of-type(2n) {
+		.p-crosstalk__hd-wrap {
+			justify-content: flex-end;
+			width: 100%;
+
+			@include pc {
+				padding-left: vw(120);
+			}
+
+			@include sp {
+				padding-left: vw-sp(20);
+			}
+		}
+
+		.p-crosstalk__hd {
+			width: 100%;
+			border-radius: 9999px 0 0 9999px;
+
+			@include sp {
+				padding: 56px vw-sp(20) 56px vw-sp(40);
+			}
+		}
+
+		.p-crosstalk__sec__head {
+			@include pc {
+				flex-direction: row-reverse;
+				padding: 0 vw(40) 0 0;
+			}
+		}
+
+		.p-crosstalk__sec__head__pic {
+			@include sp {
+				margin: 60px vw-sp(20) 0 vw-sp(-20);
+				clip-path: inset(0 round 0 9999px 9999px 0);
+			}
+		}
+
+		.p-crosstalk__sec__bg {
+			top: 605px;
+		}
+	}
+}
+
+.p-crosstalk__hd-wrap {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.p-crosstalk__hd {
+	display: inline-block;
+	padding: 80px vw(80) 80px vw(160);
+	line-height: 1.25;
+	color: $red;
+	background-color: $blue-light;
+	border-radius: 0 9999px 9999px 0;
+
+	@include sp {
+		width: calc(100% - vw-sp(20));
+		padding: 56px vw-sp(40) 56px vw-sp(20);
+	}
+}
+
+.p-crosstalk__sec__head {
+	@include pc {
+		display: flex;
+		gap: 120px;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: vw(40);
+		margin-top: 64px;
+	}
+
+	@include sp {
+		margin-top: 32px;
+	}
+}
+
+.p-crosstalk__sec__head__pic {
+	width: vw(560);
+
+	@include sp {
+		width: vw-sp(300);
+		margin: 60px vw-sp(-20) 0 vw-sp(20);
+		clip-path: inset(0 round 9999px 0 0 9999px);
+	}
+}
+
+.p-crosstalk__sec__head__text {
+	flex: 1;
+	width: 100%;
+}
+
+.p-crosstalk__sec__head__q {
+	margin-bottom: 32px;
+	font-family: $font-manrope;
+	font-size: rem(64);
+	font-weight: 700;
+	color: $red;
+	letter-spacing: 0.03em;
+	list-style: 1;
+
+	@include sp {
+		margin-bottom: 24px;
+		font-size: rem(48);
+	}
+}
+
+.p-crosstalk__sec__body {
+	margin: 80px 0 0;
+
+	@include pc {
+		padding: 0 vw(240);
+	}
+
+	@include sp {
+		margin-top: 40px;
+	}
+}
+
+.p-crosstalk__sec__inner {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 160px;
+
+	@include sp {
+		gap: 80px;
+	}
+}
+
+.p-crosstalk__sec__row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+
+	@include pc {
+		gap: 80px;
+	}
+
+	@include sp {
+		gap: 40px;
+	}
+}
+
+.p-crosstalk__sec__people {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.p-crosstalk__sec__people__pic {
+	width: vw(40);
+
+	@include sp {
+		width: vw-sp(40);
+	}
+}
+
+.p-crosstalk__sec__second__head {
+	margin-bottom: 80px;
+
+	@include sp {
+		margin-bottom: 40px;
+	}
+}
+
+.p-crosstalk__sec__lower-pic {
+	width: vw(880);
+	margin: 120px auto 0;
+
+	@include sp {
+		width: calc(100% + vw-sp(40));
+		margin: 60px 0 0 vw-sp(-20);
+	}
+}
+
+.p-crosstalk__sec__bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: vw(480);
+
+	@include sp {
+		top: 96px;
+		width: 100vw;
+	}
+}
+
+.p-crosstalk__sec__item__descs {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 2em;
+}

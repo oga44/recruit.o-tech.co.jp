@@ -1,0 +1,421 @@
+.o-btn {
+	display: inline-flex;
+	gap: vw(38);
+	align-items: center;
+	justify-content: center;
+	padding: vw(24) vw(32);
+	font-family: $font-manrope;
+	font-size: rem(14);
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.1em;
+	background-color: transparent;
+	border: 1px solid $black;
+	border-radius: 9999px;
+
+	@include sp {
+		gap: vw-sp(16);
+		min-width: vw-sp(227);
+		padding: 24px vw-sp(24);
+		font-size: rem(14);
+	}
+
+	&--fs-20 {
+		font-size: rem(20);
+
+		@include sp {
+			font-size: rem(16);
+		}
+	}
+
+	&--rounded {
+		justify-content: space-between;
+		background-color: $gray-lighter;
+		border-color: $gray-lighter;
+		border-radius: 20px;
+	}
+
+	&--sep {
+		padding: 0;
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		border-color: transparent;
+		border-radius: 0;
+	}
+
+	&--menu {
+		padding: 0;
+		letter-spacing: 0.03em;
+		border-color: transparent;
+		border-radius: 0;
+	}
+
+	&--external {
+		gap: vw(16);
+
+		@include sp {
+			gap: vw-sp(16);
+			min-width: auto;
+		}
+	}
+
+	&--arrow {
+		padding: 0;
+		border-color: transparent;
+		border-radius: 0;
+	}
+
+	&--circle {
+		padding: 0;
+		border-color: transparent;
+		border-radius: 0;
+	}
+
+	&--border-under {
+		padding: 0 0 vw(28);
+		border-bottom-color: rgba($black, 0.5);
+	}
+
+	&--en {
+		font-family: $font-manrope;
+		font-size: rem(14);
+		font-weight: 700;
+		letter-spacing: 0.1em;
+	}
+
+	&--red {
+		color: $red;
+	}
+
+	&--white {
+		border-color: white;
+	}
+}
+
+.o-btn-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(84);
+	height: vw(36);
+	background-color: transparent;
+	border: 1px solid currentcolor;
+	border-radius: 9999px;
+
+	@include sp {
+		width: vw-sp(84);
+		height: vw-sp(36);
+	}
+
+	&--lg {
+		width: vw(112);
+		height: vw(48);
+
+		@include sp {
+			width: vw-sp(84);
+			height: vw-sp(36);
+		}
+	}
+
+	&--md {
+		width: vw(98);
+		height: vw(42);
+
+		@include sp {
+			width: vw-sp(84);
+			height: vw-sp(36);
+		}
+	}
+
+	&--sm {
+		width: vw(60);
+		height: vw(32);
+	}
+
+	&--circle {
+		width: vw(36);
+		height: vw(36);
+		border: 1px solid currentcolor;
+		border-radius: 50%;
+
+		@include sp {
+			width: vw-sp(28);
+			height: vw-sp(28);
+		}
+	}
+
+	&--circle-md {
+		width: vw(62);
+		height: vw(62);
+		border: 1px solid currentcolor;
+		border-radius: 50%;
+
+		@include sp {
+			width: vw-sp(54);
+			height: vw-sp(54);
+
+			svg {
+				width: vw-sp(12);
+				height: vw-sp(12);
+			}
+		}
+	}
+
+	&--circle-lg {
+		width: vw(100);
+		height: vw(100);
+
+		@include sp {
+			width: vw-sp(50);
+			height: vw-sp(50);
+		}
+	}
+
+	&--red {
+		width: vw(64);
+		height: vw(64);
+		color: white;
+		background-color: $red;
+		border-color: $red;
+		opacity: 1;
+
+		@include sp {
+			width: vw-sp(56);
+			height: vw-sp(56);
+
+			svg {
+				width: vw-sp(14);
+				height: vw-sp(14);
+			}
+		}
+	}
+
+	&--white {
+		color: $black;
+		background-color: white;
+		border-color: white;
+	}
+}
+
+.o-btn-external {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(40);
+	height: vw(40);
+	border: 1px solid $black;
+	border-radius: 50%;
+	transition: 0.5s $transform-easing;
+
+	@include sp {
+		width: vw-sp(40);
+		height: vw-sp(40);
+	}
+}
+
+.o-btn-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(56);
+	height: vw(56);
+	border: 1px solid $black;
+	border-radius: 50%;
+	transition: 0.5s $transform-easing;
+
+	@include sp {
+		width: vw-sp(56);
+		height: vw-sp(56);
+	}
+}
+
+.o-btn-picture {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 240px;
+	overflow: hidden;
+	clip-path: inset(0 round 9999px);
+
+	@include sp {
+		height: 205px;
+		clip-path: inset(0 round 0 9999px 9999px 0);
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background-color: rgba($black, 0.5);
+	}
+
+	picture {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.o-btn-picture__cont {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 0 vw(90) 0 vw(120);
+	color: white;
+
+	@include pc {
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@include sp {
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 vw-sp(80) 0 vw-sp(20);
+	}
+}
+
+.o-btn-picture__main {
+	font-size: rem(32);
+	font-weight: 700;
+	line-height: 1.35;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(20);
+	}
+}
+
+.o-btn-picture__sub {
+	margin-top: 24px;
+	font-family: $font-manrope;
+	font-size: rem(14);
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.1em;
+
+	@include sp {
+		margin-top: 1em;
+		font-size: rem(12);
+	}
+}
+
+.o-btn-picture__icon {
+	@include sp {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 20px;
+	}
+}
+
+.o-btn-picture__bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	translate: -50% -50%;
+}
+
+.o-btn-second-nav {
+	@include pc {
+		display: flex;
+		gap: vw(80);
+		align-items: center;
+	}
+}
+
+.o-btn-second-nav__pic {
+	width: vw(480);
+
+	@include sp {
+		width: 100%;
+	}
+}
+
+.o-btn-second-nav__text {
+	@include pc {
+		flex: 1;
+		width: 100%;
+	}
+
+	@include sp {
+		margin-top: 20px;
+	}
+}
+
+.o-btn-second-nav__shoulder {
+	font-family: $font-manrope;
+	font-size: rem(16);
+	font-weight: 700;
+	line-height: 1;
+	color: $red;
+	letter-spacing: 0.03em;
+
+	@include pc {
+		padding-bottom: 8px;
+	}
+
+	@include sp {
+		font-size: rem(14);
+	}
+}
+
+.o-btn-second-nav__num {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(68);
+	height: 32px;
+	font-family: $font-manrope;
+	font-size: rem(16);
+	font-weight: 600;
+	line-height: 1;
+	color: white;
+	letter-spacing: -0.03em;
+	background-color: $gray;
+	border-radius: 9999px;
+
+	@include sp {
+		width: vw-sp(68);
+		height: 27px;
+		margin-bottom: -14px;
+		font-size: rem(13);
+	}
+}
+
+.o-btn-second-nav__hd {
+	margin-top: 24px;
+}
+
+.o-btn-second-nav__place {
+	margin-top: 16px;
+
+	@include sp {
+		margin-top: 10px;
+	}
+}
+
+.o-btn-second-nav__row {
+	display: flex;
+	gap: 7px;
+	align-items: center;
+	margin-top: 16px;
+	color: $gray;
+
+	@include sp {
+		margin-top: 10px;
+	}
+}
+
+.o-btn-second-nav__btn {
+	margin-top: 32px;
+
+	@include sp {
+		margin-top: 24px;
+	}
+}

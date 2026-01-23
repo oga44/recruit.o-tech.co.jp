@@ -1,0 +1,14 @@
+@mixin grid-col-1 {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+}
+
+@mixin grid-col-1-gap($gap: 0, $gap-sp: 0) {
+	@include grid-col-1;
+
+	gap: rem($gap);
+
+	@include sp {
+		gap: rem($gap-sp);
+	}
+}

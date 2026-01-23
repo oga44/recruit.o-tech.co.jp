@@ -1,0 +1,13 @@
+.js-guideline-flow-tab {
+	&.is-show {
+		background-color: $black;
+	}
+}
+
+.js-guideline-flow {
+	display: none;
+
+	&.is-show {
+		display: grid;
+	}
+}

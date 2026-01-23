@@ -1,0 +1,14 @@
+.m-second-nav {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+
+	@include pc {
+		gap: 80px;
+		padding-right: vw(40);
+	}
+
+	@include sp {
+		gap: 40px;
+		padding: 0 vw-sp(20);
+	}
+}

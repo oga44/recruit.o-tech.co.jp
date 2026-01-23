@@ -1,0 +1,39 @@
+.p-people-titles {
+	display: flex;
+	gap: vw(24);
+	align-items: flex-start;
+	color: $red;
+
+	@include sp {
+		gap: vw-sp(24);
+	}
+}
+
+.p-people-titles__num {
+	font-family: $font-manrope;
+	font-size: rem(64);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 0.03em;
+}
+
+.p-people-titles__text {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 10px;
+}
+
+.p-people-titles__shoulder {
+	font-family: $font-manrope;
+	font-size: rem(14);
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.03em;
+}
+
+.p-people-titles__hd {
+	font-size: rem(20);
+	font-weight: 700;
+	line-height: 1.35;
+	letter-spacing: 0.03em;
+}

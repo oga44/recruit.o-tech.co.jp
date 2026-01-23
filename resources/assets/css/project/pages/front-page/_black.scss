@@ -1,0 +1,24 @@
+.fp-black {
+	padding: 400px 0 50px;
+
+	@include sp {
+		padding: 400px 0 30px;
+	}
+}
+
+.fp-black__container {
+	position: relative;
+	z-index: 2;
+}
+
+.fp-black__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url($base-dir + "assets/images/front-page/black-bg.png");
+	background-repeat: repeat-y;
+	background-position: top center;
+	background-size: contain;
+}

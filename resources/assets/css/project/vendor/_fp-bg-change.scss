@@ -1,0 +1,31 @@
+.js-bg-change-bg {
+	&[data-section="about"],
+	&[data-section="black"] {
+		opacity: 0;
+		transition: opacity 0.5s $transform-easing;
+
+		&.is-show {
+			opacity: 1;
+		}
+	}
+}
+
+.js-bg-change-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.5s;
+
+	&.is-show {
+		opacity: 1;
+	}
+}
+
+body.is-black {
+	.header__logo--en {
+		color: white;
+	}
+}

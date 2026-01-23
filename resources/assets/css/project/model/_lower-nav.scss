@@ -1,0 +1,18 @@
+.m-lower-nav {
+	margin-top: 200px;
+
+	@include sp {
+		padding-right: vw-sp(20);
+		margin-top: 80px;
+	}
+}
+
+.m-lower-nav__cont {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 80px;
+
+	@include sp {
+		gap: 40px;
+	}
+}

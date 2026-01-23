@@ -1,0 +1,34 @@
+// デザインディスプレイサイズ
+$pc-width: 1440;
+$pc-height: 800;
+$pc-side-space: 120;
+$pc-contents-width: 1200;
+$pc-fv: 838;
+
+// sp
+$sp-width: 360;
+$sp-height: 740;
+$sp-side-space: 25;
+$sp-header-height: 48;
+$sp-fv: 838;
+
+// font
+// ベースフォント
+$font-family-base-jp: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium", "游ゴシック Medium", yugothic, "游ゴシック体", "メイリオ";
+$font-family-base-en: "SF Pro Display", "SF Pro Icons", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// 使用フォント
+$font-manrope: manrope, sans-serif;
+$font-yugo: "游ゴシック体", yugothic, "游ゴシック", "Yu Gothic", sans-serif;
+$font-noto: "Noto Sans JP", sans-serif;
+$font-zen: "Zen Kaku Gothic New", sans-serif;
+
+// 読み込み変数
+$font-family: "游ゴシック体", yugothic, "游ゴシック", "Yu Gothic", $font-noto, $font-manrope, $font-family-base-en, $font-family-base-jp, sans-serif;
+
+// size
+$pc-side-width: 180;
+
+// transition
+$base-duration: 0.3s;
+$hover: $base-duration $color-and-opacity-easing;

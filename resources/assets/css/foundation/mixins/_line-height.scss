@@ -1,0 +1,5 @@
+@use "sass:math";
+
+@mixin line-height($fs, $lh) {
+	line-height: math.div($fs, $lh);
+}

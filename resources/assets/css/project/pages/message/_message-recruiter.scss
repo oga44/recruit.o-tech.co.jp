@@ -1,0 +1,186 @@
+.p-message-recruiter {
+	padding-top: 160px;
+
+	@include sp {
+		padding-top: 140px;
+	}
+}
+
+.p-message-recruiter__head {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 32px;
+
+	@include sp {
+		gap: 28px;
+	}
+}
+
+.p-message-recruiter__body {
+	margin-top: 80px;
+
+	@include sp {
+		margin-top: 40px;
+	}
+}
+
+.p-message-recruiter__intro {
+	@include pc {
+		padding: 0 vw(120);
+	}
+}
+
+.p-message-recruiter__intro__desc {
+	margin-top: 80px;
+	font-family: $font-noto;
+	font-size: rem(18);
+	font-weight: 500;
+	line-height: 2;
+	letter-spacing: 0.05em;
+
+	@include sp {
+		padding: 0 vw-sp(20);
+		margin-top: 40px;
+		font-size: rem(16);
+	}
+}
+
+.p-message-recruiter__mid {
+	@include pc {
+		display: flex;
+		gap: vw(120);
+		align-items: flex-start;
+		margin-top: 160px;
+	}
+
+	@include sp {
+		margin-top: 80px;
+	}
+}
+
+.p-message-recruiter__mid__pics {
+	width: vw(480);
+	font-size: rem(12);
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		width: vw-sp(280);
+	}
+}
+
+.p-message-recruiter__mid__pics__text {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 25px;
+}
+
+.p-message-recruiter__mid__name {
+	display: flex;
+	gap: vw(10);
+	align-items: center;
+	margin-top: 12px;
+	font-size: rem(20);
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+
+.p-message-recruiter__mid__name-en {
+	font-family: $font-manrope;
+	font-size: rem(12);
+	font-weight: 500;
+}
+
+.p-message-recruiter__mid__text {
+	display: grid;
+	flex: 1;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 32px;
+	width: 100%;
+
+	@include sp {
+		gap: 24px;
+		padding: 0 vw-sp(20);
+		margin-top: 60px;
+	}
+}
+
+.p-message-recruiter__low {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 48px;
+	margin-top: 120px;
+
+	@include sp {
+		gap: 24px;
+		margin-top: 60px;
+	}
+}
+
+.p-message-recruiter__low__block {
+	display: flex;
+
+	@include pc {
+		gap: vw(48);
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	@include sp {
+		flex-direction: column-reverse;
+	}
+}
+
+.p-message-recruiter__low__profile {
+	font-size: rem(14);
+	font-weight: 500;
+	line-height: 1.35;
+	letter-spacing: 0.03em;
+
+	@include pc {
+		width: vw(160);
+		text-align: center;
+	}
+
+	@include sp {
+		display: flex;
+		gap: vw-sp(20);
+		align-items: center;
+		margin-top: -40px;
+		font-size: rem(13);
+	}
+}
+
+.p-message-recruiter__low__pic {
+	@include pc {
+		margin-bottom: 16px;
+	}
+
+	@include sp {
+		width: vw-sp(80);
+	}
+}
+
+.p-message-recruiter__low__name {
+	margin-top: 16px;
+	font-size: rem(24);
+	font-weight: 700;
+	line-height: 1;
+
+	@include sp {
+		margin-top: 8px;
+		font-size: rem(16);
+	}
+}
+
+.p-message-recruiter__low__text {
+	flex: 1;
+	width: 100%;
+	padding: 56px vw(112);
+	background-color: white;
+	border-radius: 9999px;
+
+	@include sp {
+		padding: 84px vw-sp(40);
+	}
+}

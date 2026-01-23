@@ -1,0 +1,157 @@
+.m-faq-card {
+	padding: vw(32);
+	background-color: white;
+	border-radius: 20px;
+
+	@include sp {
+		padding: vw-sp(24);
+	}
+}
+
+.m-faq-card__cont {
+	display: flex;
+	gap: vw(40);
+	align-items: flex-start;
+
+	@include sp {
+		gap: vw-sp(20);
+	}
+}
+
+.m-faq-card__text {
+	display: flex;
+	flex-wrap: wrap;
+	gap: vw(24);
+	align-items: flex-start;
+	width: calc(100% - vw(40) - vw(70));
+
+	@include sp {
+		gap: vw-sp(16);
+		width: calc(100% - vw(20) - vw(50));
+	}
+
+	&--a {
+		overflow: hidden;
+	}
+}
+
+.m-faq-card__shoulder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(40);
+	aspect-ratio: 1 / 1;
+	font-family: $font-manrope;
+	font-size: rem(16);
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	background-color: $gray-lighter;
+	border-radius: 50%;
+
+	@include sp {
+		width: vw-sp(32);
+	}
+
+	&--a {
+		color: white;
+		background-color: $red;
+	}
+}
+
+.m-faq-card__desc {
+	width: calc(100% - vw(24) - vw(40));
+	margin-top: 3px;
+
+	@include sp {
+		flex: 1;
+		width: calc(100% - vw(16) - vw(32));
+	}
+
+	&--q {
+		font-family: $font-yugo;
+		font-size: rem(18);
+		font-weight: 700;
+		line-height: 1.5;
+		letter-spacing: 0.03em;
+
+		@include sp {
+			font-size: rem(16);
+		}
+	}
+
+	&--a {
+		font-family: $font-noto;
+		font-size: rem(16);
+		font-weight: 500;
+		line-height: 1.75;
+		letter-spacing: 0.05em;
+
+		@include sp {
+			font-size: rem(15);
+		}
+	}
+}
+
+.m-faq-card__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(70);
+	height: 28px;
+	cursor: pointer;
+	border: 1px solid $black;
+	border-radius: 999px;
+	transform: 0.3s $transform-easing;
+
+	@include hover {
+		background-color: $black;
+
+		.m-faq-card__icon {
+			&::before,
+			&::after {
+				background-color: white;
+			}
+		}
+	}
+
+	@include sp {
+		width: vw-sp(50);
+		height: 20px;
+	}
+
+	&.is-active {
+		.m-faq-card__icon {
+			&::before {
+				transform: rotate(0deg);
+			}
+		}
+	}
+}
+
+.m-faq-card__icon {
+	position: relative;
+	display: block;
+	width: vw(14);
+	aspect-ratio: 1 / 1;
+
+	@include sp {
+		width: vw-sp(10);
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 100%;
+		height: 10%;
+		margin-top: -5%;
+		content: "";
+		background-color: $black;
+		transition: transform 0.3s $transform-easing;
+	}
+
+	&::before {
+		transform: rotate(90deg);
+	}
+}

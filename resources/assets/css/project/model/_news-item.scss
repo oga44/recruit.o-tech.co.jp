@@ -1,0 +1,151 @@
+.m-news-item {
+	position: relative;
+
+	@include pc {
+		padding-bottom: 40px;
+	}
+
+	@include sp {
+		padding-bottom: 20px;
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 1px;
+		content: "";
+	}
+
+	&::before {
+		width: 0;
+		background-color: $black;
+		transition: 0.5s $transform-easing;
+	}
+
+	&::after {
+		width: 100%;
+		background-color: rgba($black, 0.25);
+	}
+
+	&--border-top {
+		&::before,
+		&::after {
+			top: 0;
+			bottom: auto;
+		}
+	}
+
+	// @include hover {
+	// 	&::before {
+	// 		width: 100%;
+	// 	}
+	// }
+
+	&.-acc {
+		@include pc {
+			cursor: pointer;
+		}
+	}
+}
+
+.m-news-item__link {
+	position: relative;
+	font-family: $font-noto;
+	font-weight: 500;
+	line-height: 1.75;
+	letter-spacing: 0.05em;
+
+	@include pc {
+		display: flex;
+		gap: vw(40);
+		padding: 40px 0 0;
+		font-size: rem(17);
+	}
+
+	@include sp {
+		display: block;
+		padding: 20px 0 0;
+		font-size: rem(15);
+	}
+
+	&.no-hover {
+		pointer-events: none;
+	}
+}
+
+.m-news-item__date {
+	width: 6em;
+	font-family: $font-manrope;
+	font-size: rem(15);
+	line-height: 2.1;
+	letter-spacing: 1.5;
+}
+
+.m-news-item__desc {
+	@include pc {
+		flex: 1;
+	}
+
+	@include sp {
+		margin-top: 15px;
+	}
+}
+
+.m-news-item__icon {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(48);
+	height: 24px;
+	font-size: rem(10);
+	font-weight: 800;
+	line-height: 1;
+	color: white;
+	letter-spacing: -0.03em;
+	background-color: $gray;
+	border-radius: 999px;
+
+	@include sp {
+		top: 20px;
+		width: vw-sp(48);
+
+		.o-icon-external {
+			width: vw-sp(10);
+			height: vw-sp(10);
+		}
+	}
+}
+
+.m-news-item__toggle {
+	@include sp {
+		margin-top: 10px;
+	}
+}
+
+.m-news-item__body {
+	@include pc {
+		padding-left: 8.5em;
+	}
+}
+
+.m-news-item__body__inner {
+	overflow: hidden;
+}
+
+.m-news-item__body__desc {
+	font-family: $font-noto;
+	font-size: rem(16);
+	font-weight: 400;
+	line-height: 2;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(15);
+	}
+}

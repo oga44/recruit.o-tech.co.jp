@@ -1,0 +1,17 @@
+@use "sass:math";
+
+// @function vw($size, $mode: pc) {
+// 	@return math.div($size, bp($mode)) * 100vw;
+// }
+
+// @function vh($size, $height: $pc-best-view-height) {
+// 	@return $size / $height * 100vh;
+// }
+
+// @function vw-sp($size, $mode: sp) {
+// 	@return $size / bp(sp) * 100vw;
+// }
+
+// @function vh-sp($size, $height: $sp-best-view-height) {
+// 	@return $size / $height * 100vh * 553 / 667;
+// }

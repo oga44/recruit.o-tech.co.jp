@@ -1,0 +1,141 @@
+.p-business__sections {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 160px;
+	margin-top: 160px;
+
+	@include sp {
+		gap: 80px;
+		margin-top: 80px;
+	}
+}
+
+.p-business__sec__head {
+	@include pc {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: flex-start;
+	}
+}
+
+.p-business__sec__body {
+	margin-top: 80px;
+
+	@include sp {
+		margin-top: 40px;
+	}
+}
+
+.p-business__sec__upper {
+	@include pc {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@include sp {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 60px;
+	}
+}
+
+.p-business__sec__upper__pic {
+	width: vw(600);
+	clip-path: inset(0 0 round 0 999px 999px 0);
+
+	@include sp {
+		width: vw-sp(300);
+	}
+}
+
+.p-business__sec__upper__text {
+	display: grid;
+	flex: 1;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 36px;
+	width: 100%;
+	padding: 0 vw(120);
+
+	@include sp {
+		gap: 24px;
+		padding: 0 vw-sp(20);
+	}
+}
+
+.p-business__sec__main {
+	margin-top: 24px;
+
+	@include sp {
+		margin-top: 40px;
+	}
+}
+
+.p-business__sec__main__cont {
+	@include pc {
+		padding-left: vw(600);
+	}
+}
+
+.p-business__item {
+	padding: 40px 0 0;
+	border-bottom: 1px solid $gray-light;
+
+	@include sp {
+		padding-top: 20px;
+	}
+}
+
+.p-business__item__head {
+	display: flex;
+	gap: vw(40);
+	align-items: center;
+	justify-content: space-between;
+
+	@include sp {
+		gap: vw-sp(20);
+	}
+}
+
+.p-business__item__head__main {
+	display: flex;
+	gap: vw(40);
+	align-items: center;
+
+	@include sp {
+		gap: vw-sp(20);
+	}
+}
+
+.p-business__item__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(160);
+	aspect-ratio: 1 / 1;
+	background-color: white;
+	border: 1px solid $gray-lighter;
+	border-radius: 50%;
+
+	@include sp {
+		width: vw-sp(80);
+		padding: 21px;
+	}
+}
+
+.p-business__item__body {
+	padding-bottom: 40px;
+
+	@include sp {
+		padding-bottom: 20px;
+	}
+}
+
+.p-business__people {
+	margin-top: 120px;
+
+	@include sp {
+		margin-top: 60px;
+	}
+}

@@ -1,0 +1,13 @@
+.js-mv-slider {
+	.swiper-wrapper {
+		transition-timing-function: linear;
+	}
+
+	.swiper-slide {
+		width: vw(358);
+
+		@include sp {
+			width: vw-sp(293);
+		}
+	}
+}

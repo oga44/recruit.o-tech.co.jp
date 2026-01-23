@@ -1,0 +1,74 @@
+.p-projectstory-intro {
+	padding-bottom: 160px;
+
+	@include sp {
+		padding-bottom: 80px;
+	}
+}
+
+.p-projectstory-intro__outline {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 32px;
+	padding: 40px 0;
+	margin-top: 24px;
+	border-top: 1px solid $gray-light;
+	border-bottom: 1px solid $gray-light;
+}
+
+.p-projectstory-intro__outline__row {
+	@include sp {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 20px;
+	}
+}
+
+.p-projectstory-intro__staff {
+	margin-top: 40px;
+}
+
+.p-projectstory-intro__staff__row {
+	@include pc {
+		display: flex;
+		gap: vw(40);
+		align-items: center;
+		margin-top: 24px;
+	}
+}
+
+.p-projectstory-intro__staff__text {
+	@include pc {
+		display: flex;
+		gap: vw(35);
+	}
+}
+
+.p-projectstory-intro__staff__pic {
+	width: vw(360);
+
+	@include sp {
+		width: 100%;
+		margin-top: 24px;
+	}
+}
+
+.p-projectstory-intro__staff__profile {
+	@include sp {
+		margin-top: 20px;
+	}
+}
+
+.p-projectstory-intro__staff__name {
+	margin: 12px 0;
+
+	@include sp {
+		margin: 20px 0 10px;
+	}
+}
+
+.p-projectstory-intro__staff__his {
+	@include sp {
+		margin-top: 32px;
+	}
+}

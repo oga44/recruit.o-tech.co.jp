@@ -1,0 +1,15 @@
+.js-common-loop-slider {
+	.swiper-wrapper {
+		transition-timing-function: linear;
+	}
+
+	.swiper-slide {
+		width: vw(480);
+		padding: 0 vw(20);
+
+		@include sp {
+			width: vw-sp(240);
+			padding: 0 vw-sp(10);
+		}
+	}
+}

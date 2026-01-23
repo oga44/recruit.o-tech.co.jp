@@ -1,0 +1,23 @@
+.c-black {
+	color: $black;
+}
+
+.bg-blue-light3 {
+	background-color: $blue-light3;
+}
+
+.bg-blue-lighter {
+	background-color: $blue-lighter;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.bg-blue-light-texture {
+	background-color: $blue-light;
+	background-image: url($base-dir + "assets/images/common/common-texture.png");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: 500px 500px;
+}

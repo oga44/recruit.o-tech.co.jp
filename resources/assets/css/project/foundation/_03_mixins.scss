@@ -1,0 +1,40 @@
+@use "sass:math";
+
+@mixin diagonal-right-up($height) {
+	$h: ($height) + px;
+
+	clip-path: polygon(0 $h, 100% 0%, 100% calc(100% - $h), 0% 100%);
+}
+
+@mixin text-set($size, $line-height: $size, $spacing: 0, $weight: 400) {
+	font-size: rem($size);
+	font-weight: $weight;
+
+	@include line-height($line-height, $size);
+
+	letter-spacing: math.div($spacing, 1000) + em;
+}
+
+@mixin hd($mode: hd) {
+	@include max($mode) {
+		@content;
+	}
+}
+
+@mixin sp-hd() {
+	@include min-max(break, hd) {
+		@content;
+	}
+}
+
+@mixin min-height($px: 0) {
+	@media screen and (min-height: $px) {
+		@content;
+	}
+}
+
+@mixin min-fhd() {
+	@media (width >= 1920px) {
+		@content;
+	}
+}

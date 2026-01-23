@@ -1,0 +1,276 @@
+.o-typo__h2 {
+	font-size: rem(48);
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(32);
+	}
+
+	&--sm {
+		font-size: rem(40);
+		font-weight: 700;
+		line-height: 1.35;
+		letter-spacing: 0.03em;
+
+		@include sp {
+			font-size: rem(28);
+		}
+	}
+}
+
+.o-typo__h3 {
+	font-size: rem(36);
+	font-weight: 700;
+	line-height: 1.35;
+	letter-spacing: 0.05em;
+
+	@include sp {
+		font-size: rem(24);
+	}
+}
+
+.o-typo__h4 {
+	font-size: rem(32);
+	font-weight: 700;
+	line-height: 1.35;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(24);
+		line-height: 1.5;
+	}
+}
+
+.o-typo__h5 {
+	font-size: rem(28);
+	font-weight: 700;
+	line-height: 1.35;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(20);
+	}
+
+	&--sm {
+		font-size: rem(24);
+
+		@include sp {
+			font-size: rem(20);
+		}
+	}
+
+	&--xl {
+		font-size: rem(20);
+		line-height: 1.5;
+		letter-spacing: 0.05em;
+	}
+}
+
+.o-typo__p,
+.o-typo__li {
+	font-family: $font-noto;
+	font-size: rem(16);
+	font-weight: 400;
+	line-height: 2;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(15);
+	}
+
+	&--lg {
+		font-size: rem(18);
+		font-weight: 700;
+
+		@include sp {
+			font-size: rem(16);
+		}
+	}
+
+	&--lg-medium {
+		font-size: rem(20);
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 0.05em;
+	}
+
+	&--sm {
+		font-size: rem(14);
+		line-height: 1.5;
+		letter-spacing: 0.05em;
+	}
+
+	&--medium {
+		font-weight: 500;
+	}
+
+	&--bold {
+		font-weight: 700;
+	}
+}
+
+.o-typo__bold {
+	font-weight: 700;
+}
+
+.o-typo__h2,
+.o-typo__h3,
+.o-typo__h4,
+.o-typo__h5,
+.o-typo__p,
+.o-typo__li {
+	&--yugo {
+		font-family: $font-yugo;
+	}
+
+	&--en {
+		font-family: $font-manrope;
+	}
+
+	&--bold {
+		font-weight: 700;
+	}
+
+	&--fs-12 {
+		font-size: rem(12);
+	}
+
+	&--fs-14 {
+		font-size: rem(14);
+
+		@include sp {
+			font-size: rem(13);
+		}
+	}
+
+	&--fs-15 {
+		font-size: rem(15);
+	}
+
+	&--fs-17 {
+		font-size: rem(17);
+	}
+
+	&--fs-18 {
+		font-size: rem(18);
+	}
+
+	&--fs-20 {
+		font-size: rem(20);
+
+		@include sp {
+			font-size: rem(16);
+		}
+	}
+
+	&--fs-24 {
+		font-size: rem(24);
+
+		@include sp {
+			font-size: rem(20);
+		}
+	}
+
+	&--fs-28 {
+		font-size: rem(28);
+	}
+
+	&--fs-32 {
+		font-size: rem(32);
+	}
+
+	&--italic {
+		font-style: oblique;
+		line-height: 1.2;
+		letter-spacing: -0.05em;
+	}
+
+	&--blue {
+		color: $blue;
+	}
+
+	&--gray {
+		color: $gray;
+	}
+
+	&--red {
+		color: $red;
+	}
+
+	&--black-dark {
+		color: #000000;
+	}
+}
+
+.o-typo__li {
+	display: flex;
+	gap: vw(8);
+	align-items: flex-start;
+}
+
+.o-typo__li__circle {
+	position: relative;
+	top: 2px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(24);
+	aspect-ratio: 1 / 1;
+
+	&::after {
+		display: block;
+		width: vw(6);
+		aspect-ratio: 1 / 1;
+		content: "";
+		background-color: $blue;
+		border-radius: 50%;
+	}
+
+	&--lg {
+		position: relative;
+		top: 2px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: vw(30);
+		aspect-ratio: 1 / 1;
+
+		&::after {
+			display: block;
+			width: vw(6);
+			aspect-ratio: 1 / 1;
+			content: "";
+			background-color: $blue;
+			border-radius: 50%;
+		}
+	}
+}
+
+.article-head-hd {
+	font-family: $font-manrope;
+	font-size: rem(56);
+	font-weight: 700;
+	line-height: 1.5;
+	color: $black;
+	letter-spacing: 0.05em;
+
+	@include sp {
+		font-size: rem(40);
+		line-height: 1.25;
+	}
+
+	&--jp {
+		display: block;
+		font-family: $font-yugo;
+		font-size: rem(16);
+		color: $red;
+		letter-spacing: 0.03em;
+
+		@include sp {
+			margin-top: 10px;
+			font-size: rem(14);
+		}
+	}
+}

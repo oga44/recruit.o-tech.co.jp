@@ -1,0 +1,96 @@
+.fp-cross {
+	padding: 160px 0 0;
+
+	@include sp {
+		padding-top: 80px;
+	}
+}
+
+.fp-cross__body {
+	@include pc {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@include sp {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 60px;
+	}
+}
+
+.fp-cross__card {
+	@include pc {
+		width: calc(50% - vw(120));
+	}
+
+	&--lg {
+		@include pc {
+			width: 50%;
+		}
+	}
+}
+
+.fp-cross__text {
+	@include pc {
+		display: flex;
+		gap: vw(32);
+		align-items: flex-start;
+		margin-top: 36px;
+	}
+
+	@include sp {
+		margin-top: 12px;
+	}
+}
+
+.fp-cross__num {
+	width: vw(68);
+	padding: 8px;
+	font-size: rem(16);
+	font-weight: 600;
+	line-height: 1;
+	color: white;
+	text-align: center;
+	letter-spacing: -0.03em;
+	background-color: $gray;
+	border-radius: 999px;
+
+	@include sp {
+		width: vw-sp(68);
+		padding: 0.5em 1em;
+		font-size: rem(14);
+	}
+}
+
+.fp-cross__text__body {
+	@include pc {
+		width: calc(100% - vw(100));
+	}
+
+	@include sp {
+		margin-top: 12px;
+	}
+}
+
+.fp-cross__text__row {
+	display: flex;
+	gap: vw(7);
+	margin-top: 16px;
+
+	@include sp {
+		gap: vw-sp(7);
+		margin-top: 12px;
+	}
+}
+
+.fp-cross__btn {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 120px;
+
+	@include sp {
+		margin-top: 48px;
+	}
+}

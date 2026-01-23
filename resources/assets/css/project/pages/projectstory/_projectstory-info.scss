@@ -1,0 +1,195 @@
+.p-projectstory-info {
+	padding: 120px 0;
+	background-color: $gray-lighter;
+
+	@include sp {
+		padding: 83px 0 60px;
+	}
+}
+
+.p-projectstory-info__head__row {
+	@include pc {
+		display: flex;
+		gap: vw(120);
+		align-items: center;
+	}
+
+	@include sp {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 20px;
+	}
+}
+
+.p-projectstory-info__head__pic {
+	width: vw(360);
+
+	@include sp {
+		width: 100%;
+	}
+}
+
+.p-projectstory-info__head__text {
+	display: grid;
+	flex: 1;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 24px;
+	width: 100%;
+
+	@include sp {
+		gap: 20px;
+	}
+}
+
+.p-projectstory-info__body {
+	margin-top: 90px;
+
+	@include sp {
+		margin-top: 45px;
+	}
+}
+
+.p-projectstory-info__body__blocks {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 53px;
+}
+
+.p-projectstory-info__items {
+	margin-top: 32px;
+	border-top: 1px solid $gray-light;
+
+	@include sp {
+		margin-top: 24px;
+	}
+}
+
+.p-projectstory-info__item {
+	display: flex;
+	border-bottom: 1px solid $gray-light;
+
+	@include pc {
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 48px 0;
+	}
+
+	@include sp {
+		flex-direction: column-reverse;
+		gap: 20px;
+		padding: 36px 0;
+	}
+}
+
+.p-projectstory-info__item__text {
+	@include pc {
+		width: vw(600);
+	}
+
+	@include sp {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 20px;
+	}
+}
+
+.p-projectstory-info__item__pic {
+	@include pc {
+		width: vw(240);
+	}
+
+	@include sp {
+		width: vw-sp(160);
+	}
+}
+
+.p-projectstory-info__flow {
+	@include pc {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}
+
+.p-projectstory-info__flow__main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+
+	@include pc {
+		width: vw(800);
+		padding: 64px vw(64);
+		border-radius: 20px;
+	}
+
+	@include sp {
+		width: 100vw;
+		padding: 48px vw-sp(60);
+		margin: 40px vw-sp(-40) 0;
+	}
+}
+
+.p-projectstory-info__flow__main__cols {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 24px;
+
+	@include sp {
+		width: 100%;
+	}
+}
+
+.p-projectstory-info__flow__main__col {
+	@include pc {
+		display: flex;
+		gap: vw(40);
+		align-items: center;
+	}
+
+	@include sp {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 20px;
+	}
+
+	&:last-of-type {
+		.p-projectstory-info__flow__main__desc::after {
+			display: none;
+		}
+	}
+}
+
+.p-projectstory-info__flow__main__desc {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(332);
+	padding: 20px vw(48);
+	text-align: center;
+	border: 1px solid $gray-light2;
+	border-radius: 999px;
+
+	@include sp {
+		width: 100%;
+		padding: 18px;
+		background-color: white;
+	}
+
+	&::after {
+		position: absolute;
+		bottom: -24px;
+		left: 50%;
+		width: 1px;
+		height: 24px;
+		content: "";
+		background-color: $gray-light2;
+		transform: translateX(-50%);
+
+		@include sp {
+			bottom: -60px;
+			height: 60px;
+		}
+	}
+}

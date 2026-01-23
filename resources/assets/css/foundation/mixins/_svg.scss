@@ -1,0 +1,8 @@
+@mixin svg($w, $h, $p) {
+	width: rem($w);
+	height: rem($h);
+	background-image: url('data:image/svg+xml;utf8,<svg class="o-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{$w} #{$h}">#{$p}</svg>');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}

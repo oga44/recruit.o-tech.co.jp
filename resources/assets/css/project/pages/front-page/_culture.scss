@@ -1,0 +1,53 @@
+.fp-culture {
+	padding: 200px 0;
+
+	@include sp {
+		padding: 100px 0 0;
+	}
+}
+
+.fp-culture__lower {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 40px;
+	margin-top: 120px;
+
+	@include sp {
+		margin-top: 60px;
+	}
+}
+
+.fp-culture__item {
+	display: flex;
+
+	@include pc {
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@include sp {
+		flex-direction: column-reverse;
+		gap: 24px;
+	}
+}
+
+.fp-culture__text {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+
+	@include pc {
+		gap: 36px;
+		width: calc(50% - vw(40));
+	}
+
+	@include sp {
+		gap: 16px;
+	}
+}
+
+.fp-culture__pic {
+	@include pc {
+		width: 50%;
+		clip-path: inset(0 0 round 9999px);
+	}
+}

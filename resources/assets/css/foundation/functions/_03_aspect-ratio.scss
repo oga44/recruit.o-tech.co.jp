@@ -1,0 +1,7 @@
+@use "sass:map";
+
+@function ap($type: square) {
+	$ap: map.get($aspect-ratio, $type);
+
+	@return $ap;
+}

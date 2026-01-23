@@ -1,0 +1,187 @@
+.m-other-links {
+	margin-top: 160px;
+
+	@include sp {
+		margin-top: 80px;
+	}
+}
+
+.m-other-links__row {
+	@include pc {
+		display: flex;
+		gap: vw(120);
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 54px;
+	}
+
+	@include sp {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 48px;
+		padding: 0 vw-sp(20);
+		margin-top: 36px;
+	}
+}
+
+.m-other-links__cards {
+	@include pc {
+		display: flex;
+		flex: 1;
+		gap: vw(60);
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	@include sp {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 40px;
+	}
+}
+
+.m-other-links__btn {
+	@include sp {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+.m-other-links__card-cross {
+	@include pc {
+		width: vw(360);
+	}
+}
+
+.m-other-links__card-cross__text {
+	@include pc {
+		display: flex;
+		gap: vw(14);
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-top: 28px;
+	}
+
+	@include sp {
+		margin-top: 10px;
+	}
+}
+
+.m-other-links__card-cross__num {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(49);
+	height: 24px;
+	font-family: $font-manrope;
+	font-size: rem(12);
+	font-weight: 600;
+	color: white;
+	letter-spacing: -0.03em;
+	background-color: $gray;
+	border-radius: 999px;
+
+	@include pc {
+		margin-top: 5px;
+	}
+
+	@include sp {
+		width: vw-sp(68);
+		height: 27px;
+		font-size: rem(13);
+	}
+}
+
+.m-other-links__card-cross__body {
+	flex: 1;
+	width: 100%;
+
+	@include sp {
+		margin-top: 10px;
+	}
+}
+
+.m-other-links__card-cross__hd {
+	font-size: rem(24);
+	font-weight: 700;
+	line-height: 1.35;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(20);
+	}
+}
+
+.m-other-links__card-cross__row {
+	display: flex;
+	gap: vw(7);
+	align-items: center;
+	margin-top: 16px;
+
+	@include sp {
+		gap: vw-sp(7);
+		margin-top: 10px;
+	}
+}
+
+.m-other-links__card-project {
+	@include pc {
+		display: flex;
+		gap: vw(40);
+		align-items: center;
+		width: vw(800);
+	}
+}
+
+.m-other-links__card-project__pic {
+	@include pc {
+		width: vw(320);
+	}
+
+	@include sp {
+		width: 100%;
+	}
+}
+
+.m-other-links__card-project__text {
+	display: grid;
+	flex: 1;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 24px;
+	width: 100%;
+
+	@include sp {
+		margin-top: 20px;
+	}
+}
+
+.m-other-links__card-project__shoulder {
+	display: flex;
+	gap: vw(7);
+	align-items: center;
+}
+
+.m-other-links__card-people {
+	display: flex;
+	gap: vw(20);
+	align-items: center;
+
+	@include sp {
+		gap: vw-sp(20);
+	}
+}
+
+.m-other-links__card-people__pic {
+	width: vw(120);
+	aspect-ratio: 1 / 1;
+
+	@include sp {
+		width: vw-sp(100);
+	}
+}
+
+.m-other-links__card-people__name {
+	display: flex;
+	gap: vw(11);
+	align-items: center;
+}

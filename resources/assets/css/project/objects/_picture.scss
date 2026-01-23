@@ -1,0 +1,17 @@
+.o-pic {
+	&--pill {
+		clip-path: inset(0 0 round 999px);
+	}
+
+	&--circle {
+		clip-path: inset(0 0 round 50%);
+	}
+
+	&--round-10 {
+		clip-path: inset(0 0 round 10px);
+	}
+
+	&--round-20 {
+		clip-path: inset(0 0 round 20px);
+	}
+}

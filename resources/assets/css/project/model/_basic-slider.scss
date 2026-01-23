@@ -1,0 +1,138 @@
+.m-basic-slider {
+	padding: 120px 0 120px vw(120);
+	margin-left: vw(120);
+	background-color: white;
+	border-radius: 40px 0 0 40px;
+
+	@include sp {
+		padding: 48px 0 48px vw-sp(40);
+		margin-left: vw-sp(20);
+	}
+}
+
+.m-basic-slider__head {
+	@include pc {
+		display: flex;
+		gap: vw(40);
+		align-items: center;
+		justify-content: space-between;
+		padding-right: vw(120);
+	}
+
+	@include sp {
+		padding-right: vw-sp(40);
+	}
+}
+
+.m-basic-slider__navs {
+	display: flex;
+	gap: vw(8);
+	align-items: center;
+
+	@include sp {
+		gap: vw-sp(4);
+		margin-top: 32px;
+	}
+}
+
+.m-basic-slider__nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(56);
+	aspect-ratio: 1/1;
+	cursor: pointer;
+
+	@include sp {
+		width: vw-sp(48);
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		content: "";
+		border: 1px solid $gray-light2;
+		border-radius: 50%;
+	}
+}
+
+// .m-basic-slider__nav__ring {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 2;
+// 	width: 100%;
+// 	height: 100%;
+// 	transform: rotate(-90deg);
+
+// 	&--circle {
+// 		fill: transparent;
+// 		stroke: $blue;
+// 		stroke-dasharray: 0 calc(100 * 3.1416);
+// 		stroke-linecap: round;
+// 		stroke-width: 1;
+// 		animation: progress 3s ease-in-out forwards;
+// 	}
+// }
+
+// @keyframes progress {
+// 	0% {
+// 		stroke-dasharray: 0 calc(100 * 3.1416); /* 円周の長さ = 2 * π * radius (radius = 28) */
+// 	}
+
+// 	100% {
+// 		stroke-dasharray: calc(100 * 3.1416) calc(100 * 3.1416); /* 円周の長さ */
+// 	}
+// }
+
+.m-basic-slider__prev {
+	transform: rotate(180deg);
+}
+
+.m-basic-slider__main {
+	margin-top: 80px;
+
+	@include sp {
+		margin-top: 40px;
+	}
+}
+
+.m-basic-slider__shoulder {
+	display: flex;
+	gap: vw(9);
+	align-items: center;
+	margin-bottom: 1em;
+	font-size: rem(16);
+	font-weight: 700;
+	line-height: 1;
+	color: $blue;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		gap: vw-sp(8);
+		font-size: rem(15);
+	}
+
+	&--icon {
+		display: block;
+		width: vw(14);
+		aspect-ratio: 2 / 1;
+		background-color: currentcolor;
+		border-radius: 999px;
+
+		@include sp {
+			width: vw-sp(12);
+		}
+	}
+}
+
+.m-basic-slider__name {
+	display: flex;
+	gap: vw(11);
+	align-items: center;
+}

@@ -1,0 +1,36 @@
+// .fp-about {
+// 	background-image: url($base-dir + "assets/images/front-page/about-bg.jpg");
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// 	background-position: top center;
+// 	background-size: cover;
+// }
+
+.fp-about__leads {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+}
+
+.fp-about__lead {
+	padding-top: 450px;
+	font-family: $font-zen;
+	font-size: rem(24);
+	font-weight: 500;
+	line-height: 2;
+	color: white;
+	text-shadow: 0 5px 10px rgba($gray, 0.15);
+	letter-spacing: 0.05em;
+
+	@include sp {
+		padding-top: 390px;
+		font-size: rem(20);
+	}
+
+	&:nth-of-type(1) {
+		padding-top: 562px;
+
+		@include sp {
+			padding-top: 446px;
+		}
+	}
+}

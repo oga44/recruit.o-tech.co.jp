@@ -1,0 +1,34 @@
+@use "sass:math";
+
+// break points
+$break-point: (
+	break: 768,
+	max: 3840,
+	fhd: 1920,
+	large: 1536,
+	pc: 1440,
+	hd: 1280,
+	tab: 1024,
+	tab-min: 768,
+	sp-large: 414,
+	sp: 375,
+	sp-min: 320,
+	2xl: 1536,
+	xl: 1280,
+	lg: 1024,
+	md: 768,
+	sm: 640,
+);
+
+// PCディスプレイサイズ
+// 1920 * 1080
+// 1536 * 864
+// 1440 * 900
+// 1366 * 768
+// 1280 * 720
+$pc-best-view-height: 900;
+
+// SPディスプレイサイズ
+// 414 * 896
+// 374 * 667
+$sp-best-view-height: 667;

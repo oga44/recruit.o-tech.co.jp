@@ -1,0 +1,274 @@
+.fp-tech__head {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 48px;
+	color: white;
+	text-align: center;
+
+	@include sp {
+		gap: 32px;
+	}
+}
+
+.fp-tech__head__text {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 24px;
+
+	@include sp {
+		gap: 16px;
+	}
+}
+
+.fp-tech__block {
+	@include pc {
+		display: flex;
+		gap: vw(80);
+		align-items: center;
+		padding: 120px 0;
+	}
+
+	@include sp {
+		display: grid;
+		grid-template-rows: 60% 40%;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 20px;
+		width: 100vw;
+		height: calc(100% - 94px);
+		padding: 94px 0 70px;
+		overflow-x: clip;
+	}
+}
+
+.fp-tech__image {
+	background-color: $black;
+
+	@include pc {
+		width: vw(760);
+		height: 100%;
+		padding: 55px vw(160) 55px vw(120);
+		border-radius: 0 9999px 9999px 0;
+	}
+
+	@include sp {
+		width: 100%;
+		padding: 40px vw-sp(40);
+	}
+}
+
+.fp-tech__image__body {
+	height: 100%;
+}
+
+.fp-tech__text {
+	color: white;
+
+	@include pc {
+		flex: 1;
+		width: 100%;
+		padding-right: vw(160);
+	}
+}
+
+.fp-tech__ele {
+	@include sp {
+		width: vw-sp(40);
+		aspect-ratio: 1 / 1;
+
+		// flex: 1;
+		// width: vw-sp(240);
+		// height: 0;
+		// margin: 20px 0 0 auto;
+
+		// img {
+		// 	object-fit: contain;
+		// }
+	}
+}
+
+.fp-tech__block__title {
+	@include sp {
+		display: flex;
+		gap: vw-sp(16);
+		align-items: center;
+		margin-bottom: 24px;
+	}
+}
+
+.fp-tech__block__hd {
+	position: relative;
+	font-family: $font-yugo;
+	font-size: rem(32);
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0.03em;
+
+	@include pc {
+		margin: 80px 0 40px;
+	}
+
+	@include sp {
+		font-size: rem(20);
+	}
+
+	&::before {
+		@include pc {
+			position: absolute;
+			top: vw(28);
+			left: vw(-140);
+			width: vw(80);
+			height: 1px;
+			content: "";
+			background-color: $gray-light;
+		}
+	}
+
+	&--main {
+		display: inline-block;
+		font-size: rem(56);
+		font-weight: 700;
+		letter-spacing: 0.05em;
+
+		@include sp {
+			font-size: rem(30);
+		}
+	}
+}
+
+.fp-tech__index {
+	position: absolute;
+	display: flex;
+	align-items: center;
+
+	@include pc {
+		top: 50%;
+		right: vw(40);
+		flex-direction: column;
+		gap: 24px;
+		justify-content: center;
+		height: 100%;
+		transform: translateY(-50%);
+	}
+
+	@include sp {
+		top: 55%;
+		left: vw-sp(20);
+		gap: vw-sp(8);
+	}
+}
+
+.fp-tech__index__item {
+	width: vw(8);
+	height: 4px;
+	background-color: $gray;
+	border-radius: 999px;
+
+	@include sp {
+		width: vw-sp(8);
+	}
+}
+
+.fp-tech__lower {
+	padding-top: 100px;
+	color: white;
+}
+
+.fp-tech__lower__lead {
+	font-size: rem(28);
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		padding: 0 vw-sp(20);
+		font-size: rem(20);
+	}
+}
+
+.fp-tech__lower__btn {
+	@include pc {
+		display: flex;
+		gap: 2em;
+		align-items: center;
+		justify-content: space-between;
+		width: vw(874);
+		padding: 39px vw(49);
+		margin: 42px auto 0;
+		border: 1px solid $gray-light2;
+		border-radius: 9999px;
+		transition: 0.5s $transform-easing;
+	}
+
+	@include sp {
+		position: relative;
+		display: block;
+		width: calc(100% - vw-sp(20));
+		padding: 30px vw-sp(30) 30px vw-sp(20);
+		margin-top: 30px;
+		border-top: 1px solid $gray-light2;
+		border-right: 1px solid $gray-light2;
+		border-bottom: 1px solid $gray-light2;
+		border-radius: 0 9999px 9999px 0;
+	}
+
+	@include hover {
+		color: $gray;
+		background-color: white;
+
+		.fp-tech__lower__sub__text {
+			color: $blue;
+		}
+	}
+}
+
+.fp-tech__lower__main {
+	font-size: rem(28);
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+
+	@include sp {
+		font-size: rem(20);
+	}
+}
+
+.fp-tech__lower__sub {
+	@include pc {
+		display: flex;
+		gap: vw(28);
+		align-items: center;
+	}
+
+	@include sp {
+		margin-top: 20px;
+	}
+}
+
+.fp-tech__lower__sub__text {
+	font-family: $font-manrope;
+	font-size: rem(14);
+	line-height: 1;
+	color: #00ffff;
+	letter-spacing: 0.1em;
+	transition: 0.5s $transform-easing;
+
+	@include sp {
+		font-size: rem(12);
+	}
+}
+
+.fp-tech__lower__icon {
+	@include sp {
+		position: absolute;
+		top: 50%;
+		right: vw-sp(30);
+		transform: translateY(-50%);
+	}
+
+	&--body {
+		color: white;
+		background-color: #00ffff;
+		border-color: #00ffff;
+	}
+}

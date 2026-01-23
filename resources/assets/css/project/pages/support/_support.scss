@@ -1,0 +1,93 @@
+.p-support__intro {
+	padding-bottom: 120px;
+	background-color: $blue-light;
+
+	@include sp {
+		padding-bottom: 60px;
+	}
+}
+
+.p-support__intro__img {
+	padding: 80px vw(80);
+	background-color: white;
+	border-radius: 20px;
+
+	@include pc {
+		margin: 80px vw(120) 0;
+	}
+
+	@include sp {
+		padding: 40px vw-sp(40);
+		margin-top: 40px;
+		margin-left: vw-sp(20);
+		overflow-x: scroll;
+		border-radius: 20px 0 0 20px;
+	}
+
+	&--sp {
+		@include sp {
+			width: vw-sp(720);
+		}
+	}
+}
+
+.p-support__main {
+	padding-top: 160px;
+	background-color: $blue-lighter;
+
+	@include sp {
+		padding-top: 50px;
+	}
+}
+
+.p-support__sections {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 160px;
+
+	@include sp {
+		gap: 80px;
+	}
+}
+
+.p-support__sec__head {
+	display: flex;
+	gap: vw(36);
+	align-items: center;
+
+	@include sp {
+		gap: vw-sp(24);
+	}
+}
+
+.p-support__sec__head__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: vw(120);
+	aspect-ratio: 1 / 1;
+	clip-path: inset(0 0 round 50%);
+	background-color: $blue-light3;
+
+	@include sp {
+		width: vw-sp(80);
+	}
+}
+
+.p-support__sec__head__text {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 18px;
+
+	@include sp {
+		gap: 12px;
+	}
+}
+
+.p-support__sec__body {
+	margin-top: 54px;
+
+	@include sp {
+		margin-top: 36px;
+	}
+}

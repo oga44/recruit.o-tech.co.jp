@@ -1,0 +1,95 @@
+.p-projectstory-main {
+	padding-bottom: 160px;
+
+	@include sp {
+		padding-bottom: 104px;
+	}
+}
+
+.p-projectstory__sec {
+	margin-top: 120px;
+
+	@include pc {
+		padding: 0 vw(80);
+	}
+
+	@include sp {
+		margin-top: 60px;
+		overflow-x: clip;
+	}
+}
+
+.p-projectstory__sec__head {
+	@include pc {
+		display: flex;
+		gap: vw(80);
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}
+
+.p-projectstory__sec__num {
+	font-family: $font-manrope;
+	font-size: rem(160);
+	font-weight: 700;
+	line-height: 1;
+	color: $blue;
+	letter-spacing: -0.03em;
+	opacity: 0.5;
+
+	@include pc {
+		margin-top: -20px;
+	}
+
+	@include sp {
+		position: relative;
+		font-size: rem(120);
+		transform: translateX(-15%);
+	}
+}
+
+.p-projectstory__sec__head__text {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 20px;
+
+	@include pc {
+		flex: 1;
+	}
+
+	@include sp {
+		gap: 14px;
+	}
+}
+
+.p-projectstory__sec__shoulder {
+	display: flex;
+	gap: vw(7);
+	align-items: center;
+}
+
+.p-projectstory__sec__body {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 80px;
+
+	@include pc {
+		padding: 0 vw(40);
+		margin-top: 80px;
+	}
+
+	@include sp {
+		gap: 40px;
+		margin-top: 40px;
+	}
+}
+
+.p-projectstory__sec__descs {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 2em;
+
+	@include pc {
+		padding: 0 vw(80);
+	}
+}

@@ -1,0 +1,7 @@
+.js-voice-target {
+	display: none;
+
+	&.is-show {
+		display: grid;
+	}
+}

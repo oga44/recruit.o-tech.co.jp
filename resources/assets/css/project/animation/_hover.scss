@@ -1,0 +1,131 @@
+.anm-scale {
+	overflow: hidden;
+
+	img {
+		transition: 0.5s $transform-easing;
+	}
+}
+
+.anm-arrow {
+	display: block;
+}
+
+.anm-circle-scale {
+	transition: 0.5s $transform-easing;
+}
+
+.anm-color-reserve,
+.anm-color-reserve--black {
+	transition: 0.5s $transform-easing;
+}
+
+.anm-hover {
+	cursor: pointer;
+
+	&--hide {
+		overflow: hidden;
+	}
+
+	@include hover {
+		.anm-scale {
+			img {
+				scale: 1.15;
+			}
+		}
+
+		.anm-circle-scale {
+			scale: 1.15;
+		}
+
+		.anm-arrow,
+		.anm-forward {
+			transform: scale3d(13, 13, 13);
+			animation-name: anchor-forward;
+			animation-duration: 0.9s;
+			animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			animation-fill-mode: forwards;
+		}
+
+		&.anm-color-reserve,
+		.anm-color-reserve {
+			color: white;
+			background-color: $black;
+			border-color: $black;
+
+			&--transparent {
+				color: $black;
+				background-color: transparent;
+				border-color: transparent;
+			}
+
+			&--red {
+				color: white;
+				background-color: $red;
+				border-color: $red;
+			}
+
+			&--white-red {
+				color: $red;
+				background-color: white;
+				border-color: white;
+			}
+
+			&--white-black {
+				color: $black;
+				background-color: white;
+				border-color: white;
+			}
+		}
+
+		&.anm-color-reserve--black,
+		.anm-color-reserve--black {
+			color: $black;
+			background-color: white;
+			border-color: white;
+		}
+
+		.anm-color-reserve--white {
+			color: white;
+			background-color: $black;
+			border-color: $black;
+		}
+
+		.o-btn-menu,
+		.o-btn-external {
+			color: white;
+			background-color: $black;
+		}
+
+		.o-icon-toggle {
+			background-color: $black;
+		}
+
+		.o-icon-toggle__body {
+			&::before,
+			&::after {
+				background-color: white;
+			}
+		}
+	}
+}
+
+@keyframes anchor-forward {
+	0% {
+		transform: translate(0%, 0%);
+	}
+
+	30% {
+		opacity: 0;
+		transform: translate(100%, 0);
+	}
+
+	30.1% {
+		opacity: 0;
+		transform: translate(-100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0%, 0%);
+	}
+}

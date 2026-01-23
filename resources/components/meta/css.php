@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="<?= vite_src_css("app.scss") ?>">

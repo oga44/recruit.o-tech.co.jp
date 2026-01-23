@@ -1,0 +1,27 @@
+.fp-news {
+	width: calc(100% - vw(120));
+	padding: 120px 0;
+	margin-top: 200px;
+	background-color: white;
+	border-radius: 0 80px 80px 0;
+
+	@include sp {
+		width: calc(100% - vw-sp(20));
+		padding: 60px 0;
+		margin-top: 100px;
+		border-radius: 0 40px 40px 0;
+	}
+}
+
+.fp-news__list {
+	@include sp {
+		padding: 0 vw-sp(40) 0 vw-sp(20);
+		margin-top: 28px;
+	}
+}
+
+.fp-news__all {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}

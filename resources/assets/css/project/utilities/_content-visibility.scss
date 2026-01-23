@@ -1,0 +1,13 @@
+.content-visibility {
+	&-auto {
+		content-visibility: auto;
+	}
+
+	&-visible {
+		content-visibility: visible;
+	}
+
+	&-hidden {
+		content-visibility: hidden;
+	}
+}
