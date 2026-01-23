@@ -87,8 +87,10 @@ define("NAME_CONTACT", "お問い合わせ");
 
 define("URL_MYNAVI_2025", "https://job.mynavi.jp/25/pc/search/corp73290/outline.html");
 define("URL_MYNAVI_2026", "https://job.mynavi.jp/26/pc/corpinfo/displayInternship/index?corpId=73290&optNo=Vj4VU");
+define("URL_MYNAVI_2027", "https://job.mynavi.jp/27/pc/search/corp73290/outline.html");
 define("URL_MYPAGE_2025", "https://mypage.3050.i-webs.jp/o-tec2025/");
 define("URL_MYPAGE_2026", "https://mypage.3030.i-webs.jp/o-tec2026/");
+define("URL_MYPAGE_2027", "https://mypage.3030.i-webs.jp/o-tec2027/");
 
 define("URL_PRIVACY", "https://www.o-tec.co.jp/company/policy/privacypolicy/");
 define("URL_TERMS", "https://www.o-tec.co.jp/company/policy/terms/");

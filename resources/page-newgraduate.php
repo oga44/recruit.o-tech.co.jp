@@ -47,14 +47,8 @@
 									"size" => "lg"
 								]); ?>
 								<div class="p-guideline__btns__row">
-									<a href="<?= URL_MYPAGE_2025 ?>" class="o-btn p-guideline__btn--red" target="_blank">
-										<p class="o-btn__text">採用マイページ2025</p>
-										<div class="o-btn__icon">
-											<?php get_template_part(ICON_EXTERNAL); ?>
-										</div>
-									</a>
-									<a href="<?= URL_MYPAGE_2026 ?>" class="o-btn p-guideline__btn--red" target="_blank">
-										<p class="o-btn__text">採用マイページ2026</p>
+									<a href="<?= URL_MYPAGE_2027 ?>" class="o-btn p-guideline__btn--red" target="_blank">
+										<p class="o-btn__text">採用マイページ2027</p>
 										<div class="o-btn__icon">
 											<?php get_template_part(ICON_EXTERNAL); ?>
 										</div>
@@ -67,14 +61,9 @@
 									"size" => "lg"
 								]); ?>
 								<div class="p-guideline__btns__row">
-									<a href="<?= URL_MYNAVI_2025 ?>" class="o-btn p-guideline__btn" target="_blank">
+									<a href="<?= URL_MYNAVI_2027 ?>" class="o-btn p-guideline__btn" target="_blank">
 										<p class="o-btn__text">
-											<img src="<?= URL_SVG ?>logo-mynav-2025.svg" alt="マイナビ2025">
-										</p>
-									</a>
-									<a href="<?= URL_MYNAVI_2026 ?>" class="o-btn p-guideline__btn" target="_blank">
-										<p class="o-btn__text">
-											<img src="<?= URL_SVG ?>logo-mynav-2026.svg" alt="マイナビ2026">
+											<img src="<?= URL_SVG ?>logo-mynav-2027.svg" alt="マイナビ2027">
 										</p>
 									</a>
 								</div>
