@@ -38,7 +38,7 @@ export default defineConfig({
 			dev: {
 				bs: {
 					port: 3030,
-					proxy: "localhost:10099",
+					proxy: "localhost:10037",
 					ui: {
 						port: 8080,
 					},
