@@ -18,7 +18,7 @@
 				<dl class="footer__info">
 					<dt class="footer__corp"><?= NAME_CORP ?></dt>
 					<dd class="footer__info__desc">
-						〒135-0016<br>東京都江東区東陽2-4-2（新宮ビル内）<br>TEL <a class="footer__tel" href="tel:03-3699-0411">03-3699-0411</a> / FAX 03-3360-6202
+						〒135-0016<br>東京都江東区東陽2-4-2（新宮ビル内）<br>TEL <a class="footer__tel" href="tel:03-3699-0411">03-3699-0411</a> / FAX 03-3699-0416
 					</dd>
 				</dl>
 				<div class="footer__btn">
