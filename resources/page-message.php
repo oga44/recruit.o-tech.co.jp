@@ -237,26 +237,6 @@ get_header(); ?>
 						<div class="p-message-recruiter__low__block">
 							<div class="p-message-recruiter__low__profile">
 								<?php get_template_part(PICTURE, null, [
-									"path" => "message/message-recruiter-img-04.jpg",
-									"alt" => "",
-									"type" => "circle",
-									"variable" => "p-message-recruiter__low__pic",
-								]); ?>
-								<div>
-									<p>総務統括部　人事課　課長<br>2006年入社</p>
-									<p class="p-message-recruiter__low__name">天池　元基</p>
-								</div>
-							</div>
-							<div class="p-message-recruiter__low__text">
-								<?php get_template_part(TYPO, null, [
-									"text" => "当社にご関心を持っていただき、誠にありがとうございます。皆さんの中には就職活動に不安を感じている方もいらっしゃるかと思いますが、どうぞご安心ください。当社では、皆さんの個性と情熱を大切にし、一人ひとりが最大限に活躍できる環境を整えています。入社後も充実した研修制度とサポート体制があり、新たなチャレンジを全力で応援します。皆さんと共に未来を創ることを楽しみにしています。",
-									"weight" => "medium"
-								]); ?>
-							</div>
-						</div>
-						<div class="p-message-recruiter__low__block">
-							<div class="p-message-recruiter__low__profile">
-								<?php get_template_part(PICTURE, null, [
 									"path" => "message/message-recruiter-img-03.jpg",
 									"alt" => "",
 									"type" => "circle",
